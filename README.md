@@ -1,4 +1,4 @@
-# React-Native-Base-Project
+# React-Native-Base-Project (TypeScript)
 
 This repo contains base project with basic modules like:-
 

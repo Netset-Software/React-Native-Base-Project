@@ -1,0 +1,76 @@
+import { User } from '../types/modals/User';
+
+const LOADING_STATUS = 'LOADING_STATUS';
+const CLEAR_ALL = 'CLEAR_ALL';
+const AUTH_ERROR = 'AUTH_ERROR';
+const SET_USER_NUMBER = 'SET_USER_NUMBER';
+const SET_USER_INFO = 'SET_USER_INFO';
+const GET_TOKEN = 'GET_TOKEN';
+const UPDATE_PROFILE = 'UPDATE_PROFILE';
+const SET_USER_LOCATION = 'SET_USER_LOCATION';
+const SET_USERS_CARDS = 'SET_USERS_CARDS';
+const SET_PAYMENT_CARDS = 'SET_PAYMENT_CARDS'
+const SET_REWIND_CARDS = 'SET_REWIND_CARDS';
+const SET_ACTIVE_SCREEN = 'SET_ACTIVE_SCREEN';
+const GET_CONTACTS = 'GET_CONTACTS';
+const GET_CATEGORIES = 'GET_CATEGORIES';
+const CLEAR_CATEGORY = 'CLEAR_CATEGORY'
+const ADD_CATEGORY = "ADD_CATEGORY";
+const GET_FAV_CONTACTS = 'GET_FAV_CONTACTS';
+
+const SET_PROCEDURE = "ET_PROCEDURE";
+const SET_DRUG = 'SET_DRUG';
+const SET_DRUG_FAV_LIST = "SET_DRUG_FAV_LIST";
+const SET_PROCEDURE_FAV_LIST = "SET_PROCEDURE_FAV_LIST";
+const STORE_ALL_PDF = "STORE_ALL_PDF"
+const UPDATE_DRUG_FAV = "UPDATE_DRUG_FAV"
+const UPDATE_PROCEDURE_FAV = "UPDATE_PROCEDURE_FAV"
+
+export interface LoadingActionType {
+  type: string;
+  payload: boolean;
+}
+
+export interface ActiveScreenActionType {
+  type: string;
+  payload: string;
+}
+
+export interface AuthActionType {
+  type
+  payload
+}
+
+export interface ProfileType {
+  type: String;
+  payload: Object;
+}
+
+export type AppActionTypes = LoadingActionType | AuthActionType | ProfileType | ActiveScreenActionType;
+
+export {
+  LOADING_STATUS,
+  CLEAR_ALL,
+  AUTH_ERROR,
+  SET_USER_NUMBER,
+  SET_USER_INFO,
+  GET_TOKEN,
+  UPDATE_PROFILE,
+  SET_USER_LOCATION,
+  SET_USERS_CARDS,
+  SET_PAYMENT_CARDS,
+  SET_ACTIVE_SCREEN,
+  SET_REWIND_CARDS,
+  GET_CONTACTS,
+  GET_CATEGORIES,
+  CLEAR_CATEGORY,
+  ADD_CATEGORY,
+  GET_FAV_CONTACTS,
+  SET_DRUG,
+  SET_PROCEDURE,
+  SET_DRUG_FAV_LIST,
+  SET_PROCEDURE_FAV_LIST,
+  STORE_ALL_PDF,
+  UPDATE_DRUG_FAV,
+  UPDATE_PROCEDURE_FAV
+};
